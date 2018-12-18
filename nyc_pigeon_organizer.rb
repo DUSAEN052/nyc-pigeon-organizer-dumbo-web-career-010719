@@ -2,7 +2,8 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   birds = {}
   
-  data.each do |key, value|
-    value.each
+  data[:color].each do |color, arr|
+    arr.each do |name|
+      birds[name].merge!()
   
 end
