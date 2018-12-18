@@ -3,6 +3,6 @@ def nyc_pigeon_organizer(data)
   birds = {}
   
   data.each do |key, value|
-    value
+    value.each
   
 end
