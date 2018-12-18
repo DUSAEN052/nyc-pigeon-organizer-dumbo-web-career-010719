@@ -16,8 +16,7 @@ def nyc_pigeon_organizer(data)
   lives.each do |name, location|
     birds[name][:lives] = []
   end
-  puts "AAAAAAAAAAAA"
-  puts birds
+  birds
 end
 
 def get_colors(data)
