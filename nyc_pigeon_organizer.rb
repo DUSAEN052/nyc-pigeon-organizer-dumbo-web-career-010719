@@ -24,7 +24,7 @@ def get_colors(data)
   
   data[:color].each do |color, arr|
     arr.each do |name|
-      hash[name] += [color]
+      hash[name] += [color.to_s]
     end
   end
   
