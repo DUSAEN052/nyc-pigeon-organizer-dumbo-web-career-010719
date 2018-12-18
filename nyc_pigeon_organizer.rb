@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
 end
 
 def get_colors(data)
-  hash = {}
+  hash = new.H
   
   data[:color].each do |color, arr|
     
