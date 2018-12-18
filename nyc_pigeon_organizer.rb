@@ -7,7 +7,6 @@ def nyc_pigeon_organizer(data)
   
   colors.each do |name, color|
    birds[name] = {:color => color}
-    #puts "#{name}, #{birds[name][:color]}"
   end
   
   gender.each do |name, gender|
