@@ -36,7 +36,7 @@ def get_gender(data)
   
   data[:gender].each do |gender, arr|
     arr.each do |name|
-      hash[name] += [gender]
+      hash[name] += [gender.to_s]
     end
   end
   
