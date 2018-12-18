@@ -6,29 +6,19 @@ def nyc_pigeon_organizer(data)
   lives = get_lives(data)
   
   colors.each do |name, color|
-    birds[name][:color] = color
+   birds[name] = {:color => color}
+    #puts "#{name}, #{birds[name][:color]}"
   end
   
   gender.each do |name, gender|
-    birds[name][:gender] = gender
+    birds[name].merge!({:gender => gender})
   end
   
   lives.each do |name, location|
-    birds[name][:lives] = location
+    birds[name].merge!({:lives => location})
   end
+  
   birds
-end
-
-def get_colors(data)
-  hash = Hash.new([])
-  
-  data[:color].each do |color, arr|
-    arr.each do |name|
-      hash[name] += [color.to_s]
-    end
-  end
-  
-  hash
 end
 
 def get_gender(data)
