@@ -24,7 +24,7 @@ def get_colors(data)
   
   data[:color].each do |color, arr|
     arr.each do |name|
-      hash[name] << color
+      hash[name] += [color]
     end
   end
   
@@ -36,7 +36,7 @@ def get_gender(data)
   
   data[:gender].each do |gender, arr|
     arr.each do |name|
-      hash[name] << gender
+      hash[name] += [gender]
     end
   end
   
@@ -48,7 +48,7 @@ def get_lives(data)
   
   data[:lives].each do |location, arr|
     arr.each do |name|
-      hash[name] << location
+      hash[name] += [location]
     end
   end
   
