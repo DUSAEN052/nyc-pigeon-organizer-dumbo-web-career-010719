@@ -7,3 +7,9 @@ def nyc_pigeon_organizer(data)
       birds[name][:color] 
   
 end
+
+def get_colors(data)
+  hash = {}
+  
+  data[:color].each do |color, arr|
+    
