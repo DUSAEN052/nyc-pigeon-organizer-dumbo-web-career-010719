@@ -9,7 +9,16 @@ def nyc_pigeon_organizer(data)
 end
 
 def get_colors(data)
-  hash = new.H
+  hash = Hash.new([])
   
   data[:color].each do |color, arr|
-    
+    arr.each do [name]
+      hash[name] << color
+    end
+  end
+  
+  hash
+end
+
+def get_gender(data)
+  
