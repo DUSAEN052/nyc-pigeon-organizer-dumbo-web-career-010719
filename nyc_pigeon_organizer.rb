@@ -6,17 +6,17 @@ def nyc_pigeon_organizer(data)
   lives = get_lives(data)
   
   colors.each do |name, color|
-    birds[name][:color] << color
+    birds[name][:color] = []
   end
   
   gender.each do |name, gender|
-    birds[name][:gender] << gender
+    birds[name][:gender] = []
   end
   
   lives.each do |name, location|
-    birds[name][:lives] << location
+    birds[name][:lives] = []
   end
-  birds
+  puts birds
 end
 
 def get_colors(data)
