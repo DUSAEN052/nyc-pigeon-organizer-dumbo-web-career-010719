@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
-  birds = Hash.new({Hash.new([])})
+  birds = Hash.new({})
   colors = get_colors(data)
   gender = get_gender(data)
   lives = get_lives(data)
